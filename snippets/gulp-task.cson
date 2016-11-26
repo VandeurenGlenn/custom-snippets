@@ -1,0 +1,4 @@
+'.source.js':
+  'gulp-task':
+    'prefix': 'task'
+    'body': 'task($1, () => { $0 });'

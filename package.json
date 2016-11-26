@@ -1,0 +1,21 @@
+{
+  "name": "custom-snippets",
+  "version": "0.0.1",
+  "description": "Snippets for the web",
+  "main": "./lib/custom-snippets",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VandeurenGlenn/custom-snippets.git"
+  },
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VandeurenGlenn/custom-snippets/issues"
+  },
+  "engines": {
+    "atom": ">=0.174 <2.0.0"
+  }
+}

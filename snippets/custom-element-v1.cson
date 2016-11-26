@@ -1,0 +1,18 @@
+'.source.js':
+  'custom-element-v1':
+      'prefix': 'cel'
+      'body': 'class ${2:MyElement} extends ${3:HTMLElement} {\n\t
+        static get is() {
+          return \'${1:my-element}\';
+        }\n\t
+        static get observedAttributes() {
+          return [] // attributes to observe
+        }\n\t
+        constructor() {\n\t\t
+          this.root = this.attachShadow({mode: \'open\'});\n\t\t
+          $0\n\t
+        }\n\t
+        attributeChangedCallback(name, oldVal, newVal) {\n\t\t
+          console.log(name, oldVal, newVal);\n\t
+        }
+      \n}\ncustomElements.define(${2:MyElement}.is, ${2:MyElement})'
