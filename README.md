@@ -12,6 +12,7 @@ class ${2:MyElement} extends ${3:HTMLElement} {
     return [] // attributes to observe
   }
   constructor() {
+    super();
     this.root = this.attachShadow({mode: 'open'});
     $0
   }

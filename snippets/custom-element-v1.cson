@@ -9,6 +9,7 @@
           return [] // attributes to observe
         }\n\t
         constructor() {\n\t\t
+          super();\n\t\t
           this.root = this.attachShadow({mode: \'open\'});\n\t\t
           $0\n\t
         }\n\t
