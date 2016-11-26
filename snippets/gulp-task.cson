@@ -1,4 +1,6 @@
 '.source.js':
   'gulp-task':
-    'prefix': 'task'
-    'body': 'task($1, () => { $0 });'
+    'prefix': 'gtask'
+    'body': '${2:gulp.}task($1, () => {\n\t
+      $0\n
+    });'
