@@ -8,8 +8,9 @@ class ${2:MyElement} extends ${3:HTMLElement} {
   static get is() {
     return '${1:my-element}';
   }
+  // attributes to observe
   static get observedAttributes() {
-    return [] // attributes to observe
+    return [];
   }
   constructor() {
     super();

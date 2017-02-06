@@ -1,19 +1,23 @@
 '.source.js':
   'custom-element-v1':
       'prefix': 'cel'
-      'body': 'class ${2:MyElement} extends ${3:HTMLElement} {\n\t
+      'body': 'use strict';\n
+      'class ${5:MyElement} extends ${4:HTMLElement} {\n\t
         static get is() {
-          return \'${1:my-element}\';
+          return \'${3:my-element}\';
         }\n\t
+        // attributes to observe
         static get observedAttributes() {
-          return [] // attributes to observe
+          return [];
         }\n\t
         constructor() {\n\t\t
           super();\n\t\t
-          this.root = this.attachShadow({mode: \'open\'});\n\t\t
+          ${2:this.root = this.attachShadow({mode: \'open\'});\n\t\t}
+          ${1:// @template}\n\t
           $0\n\t
         }\n\t
-        attributeChangedCallback(name, oldVal, newVal) {\n\t\t
-          console.log(name, oldVal, newVal);\n\t
+        attributeChangedCallback(name, oldValue, newValue) {\n\t\t
+          console.log(name, oldValue, newValue);\n\t
         }
-      \n}\ncustomElements.define(${2:MyElement}.is, ${2:MyElement})'
+      \n}\n
+      customElements.define(${5:MyElement}.is, ${5:MyElement})'
