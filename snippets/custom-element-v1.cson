@@ -1,8 +1,8 @@
 '.source.js':
   'custom-element-v1':
       'prefix': 'cel'
-      'body': 'use strict';\n
-      'class ${5:MyElement} extends ${4:HTMLElement} {\n\t
+      'body': '\'use strict\';\n
+      class ${5:MyElement} extends ${4:HTMLElement} {\n\t
         static get is() {
           return \'${3:my-element}\';
         }\n\t
