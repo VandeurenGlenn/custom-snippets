@@ -12,12 +12,12 @@
         }\n\t
         constructor() {\n\t\t
           super();\n\t\t
-          ${2:this.root = this.attachShadow({mode: \'open\'});\n\t\t}
+          ${2:this.shadowRoot = this.attachShadow({mode: \'open\'});\n\t\t}
           ${1:// @template}\n\t
           $0\n\t
         }\n\t
-        attributeChangedCallback(name, oldValue, newValue) {\n\t\t
-          console.log(name, oldValue, newValue);\n\t
+        attributeChangedCallback(name, old, value) {\n\t\t
+          console.log(name, old, value);\n\t
         }
       \n}\n
       customElements.define(${5:MyElement}.is, ${5:MyElement})'
